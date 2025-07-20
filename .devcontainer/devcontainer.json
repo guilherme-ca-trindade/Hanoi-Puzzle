@@ -1,0 +1,28 @@
+{
+    "name": "Hanoi Puzzle",
+    "runArgs": ["--name", "hanoi-puzzle" ],
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
+    "postStartCommand": "git config --global --add safe.directory /workspaces/lab-5",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "python.pythonPath": "/usr/local/bin/python",
+                "workbench.editorAssociations": {
+                    "*.md": "vscode.markdown.preview.editor"
+                }
+            },
+            "extensions": [
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-python.debugpy",
+                "ms-vsliveshare.vsliveshare",
+                "yzhang.markdown-all-in-one",
+                "esbenp.prettier-vscode",
+                "ms-vscode-remote.vscode-remote-extensionpack",
+                "github.copilot",
+                "github.copilot-chat"
+            ]
+        }
+    }
+
+}
